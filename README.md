@@ -78,9 +78,23 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
-## 環境構築手順
-1. cd ファイル名
-2. composer install
-3. npm install
+# 環境構築手順
+1. [docker-laravelのクローン](https://github.com/satuTeam/docker-laravel)
+2. cd docker-laravelのリポジトリ名
+
+1. ```git clone https://github.com/satuTeam/homepage.git backend```
+
+#### プロジェクト起動
+##### docker-laravelでの操作
+1. make init
+docker起動、composerのインストールなど
+
+
+composerをupdateする[参考](https://qiita.com/kaito_111/items/9387a57decadf8a2ca42)
+
+##### このリポジトリで操作
+1. cd backend
+3. npm ci
 4. npn run watch
+エラーが起きたときnpmをアップデートする[参考](https://qiita.com/Kohei_Kishimoto0214/items/51157176eaaf9721c30a)
 # homepage
