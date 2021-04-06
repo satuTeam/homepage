@@ -1,0 +1,10 @@
+image: java:8-jdk
+staging:
+  type: deploy
+  script:
+   # push to heroku server
+   - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APPNAME.git
+   - git push -f heroku master
+   - echo "Deployed to staging server"
+  only:
+  - master
